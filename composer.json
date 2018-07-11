@@ -1,22 +1,27 @@
 {
-    "name": "myciplnew/timezones",
-    "description": "Test description",
-    "authors": [
-        {
-            "name": "Sheik",
-            "email": "sheik@colanonline.com"
-        }
-    ],
-    "minimum-stability": "dev",
-    "require": {},    
-    "license": "MIT",
-    "require": {
-        "php": ">=7.1.3"
-    },
-    "autoload": {
-        "psr-4": {
-            "Myciplnew\\Timezones\\": "src/"
-        }
+  "name": "myciplnew/timezones",
+  "description": "Test description",
+  "license": "MIT",
+  "authors": [
+    {
+        "name": "Sheik",
+        "email": "sheik@colanonline.com"
     }
-
+  ],
+  "require": {
+    "php": ">=7.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Myciplnew\\Timezones\\": "src"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Myciplnew\\Timezones\\TimezonesServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "dev"
 }
